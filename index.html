@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apoorva Pandey Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#a5f3fc',
+            secondary: '#f9a8d4',
+          },
+          animation: {
+            fadeIn: 'fadeIn 2s ease-out',
+            slideIn: 'slideIn 1.5s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideIn: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Navbar -->
+  <header class="flex flex-wrap justify-between items-center p-6 bg-gray-900 shadow-md">
+    <h1 class="text-2xl font-bold text-primary animate-fadeIn">MyPortfolio</h1>
+    <nav class="space-x-4 mt-4 sm:mt-0 animate-fadeIn">
+      <a href="#home" class="hover:text-secondary">Home</a>
+      <a href="#about" class="hover:text-secondary">About</a>
+      <a href="#projects" class="hover:text-secondary">Projects</a>
+      <a href="#contact" class="hover:text-secondary">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center py-20 bg-gradient-to-b from-gray-950 to-gray-900 animate-fadeIn">
+    <img src="images/profile.jpg" alt="Apoorva Pandey" class="mx-auto w-32 sm:w-36 md:w-40 h-auto rounded-full shadow-lg mb-6 animate-slideIn">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-2 animate-slideIn text-primary">Hi, I'm Apoorva Pandey</h2>
+    <p class="text-md sm:text-lg text-gray-300 mb-4 animate-fadeIn">Web Developer | Tech Enthusiast | Lifelong Learner</p>
+    <p class="text-secondary text-sm sm:text-base animate-fadeIn">HTML • CSS • JavaScript • React • Tailwind • Python</p>
+  </section>
+
+</body>
+</html>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 md:px-20 bg-gray-900 animate-fadeIn">
+    <h3 class="text-2xl sm:text-3xl font-semibold border-b-2 border-secondary inline-block mb-6">About Me</h3>
+    <p class="text-gray-300 mb-4">
+      I'm a Computer Science undergraduate at PSIT Kanpur, specializing in Artificial Intelligence and Machine Learning. With a strong foundation in front-end development and a growing interest in full-stack engineering, I enjoy transforming creative ideas into real-world web experiences.
+    </p>
+    <ul class="list-disc list-inside text-gray-300">
+      <li><strong>Education:</strong> B.Tech in CSE-AIML, PSIT Kanpur</li>
+      <li><strong>Experience:</strong> Web Development Intern at Prodigy InfoTech</li>
+      <li><strong>Strengths:</strong> Responsive Design, UI/UX, Clean Code, Fast Learning</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 md:px-20 bg-gray-950 animate-fadeIn">
+    <h3 class="text-2xl sm:text-3xl font-semibold border-b-2 border-secondary inline-block mb-6">Projects</h3>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+  <img src="https://via.placeholder.com/400x200.png?text=Responsive+Navbar" alt="Responsive Navbar Preview" class="mb-4 rounded-md">
+  <h4 class="text-lg sm:text-xl font-semibold text-primary">Responsive Navbar</h4>
+  <p class="text-gray-300 mb-2">A sleek, mobile-first navbar with dropdown functionality and smooth transitions using Tailwind CSS.</p>
+  <div class="flex gap-4">
+    <a href="https://github.com/ApoorvaPandey-12/PRODIGY_WD_01" target="_blank" class="text-sm text-secondary hover:underline">View Code</a>
+    <a href="#" class="text-sm text-secondary hover:underline">Live Demo</a>
+  </div>
+</div>
+
+<div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+  <img src="https://via.placeholder.com/400x200.png?text=AI+Tic+Tac+Toe" alt="AI Tic Tac Toe Preview" class="mb-4 rounded-md">
+  <h4 class="text-lg sm:text-xl font-semibold text-primary">AI Tic Tac Toe</h4>
+  <p class="text-gray-300 mb-2">An unbeatable AI-powered Tic Tac Toe game implemented with smart logic using HTML, CSS, and JavaScript.</p>
+  <div class="flex gap-4">
+    <a href="https://github.com/ApoorvaPandey-12/PRODIGY_WD_02" target="_blank" class="text-sm text-secondary hover:underline">View Code</a>
+    <a href="#" class="text-sm text-secondary hover:underline">Live Demo</a>
+  </div>
+</div>
+
+<div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+  <img src="https://via.placeholder.com/400x200.png?text=Batman+AI+Assistant" alt="Batman AI Assistant Preview" class="mb-4 rounded-md">
+  <h4 class="text-lg sm:text-xl font-semibold text-primary">Batman AI Assistant</h4>
+  <p class="text-gray-300 mb-2">A Python-based voice assistant with automation capabilities, web browsing, and command processing features.</p>
+  <div class="flex gap-4">
+    <a href="https://github.com/ApoorvaPandey-12/PRODIGY_WD_03" target="_blank" class="text-sm text-secondary hover:underline">View Code</a>
+    <a href="#" class="text-sm text-secondary hover:underline">Live Demo</a>
+  </div>
+</div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+        <h4 class="text-lg sm:text-xl font-semibold text-primary">Chronics (Digital Diary)</h4>
+        <p class="text-gray-300">A personal diary web app to reflect and store thoughts privately with clean UI and password protection.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+        <h4 class="text-lg sm:text-xl font-semibold text-primary">Avartan NGO Website</h4>
+        <p class="text-gray-300">An impactful website for a youth-led NGO promoting social responsibility.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transform transition duration-300">
+        <h4 class="text-lg sm:text-xl font-semibold text-primary">Portfolio Website</h4>
+        <p class="text-gray-300">This live portfolio built using Tailwind CSS and deployed on GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 md:px-20 bg-gray-900 text-center animate-fadeIn">
+    <h3 class="text-2xl sm:text-3xl font-semibold border-b-2 border-secondary inline-block mb-6">Contact</h3>
+    <p class="text-gray-300 mb-4">Let's connect! Reach me on my socials or via email.</p>
+    <div class="flex flex-wrap justify-center gap-6 text-lg sm:text-xl">
+      <a href="https://www.linkedin.com/in/apoorva-pandey-a41333275/" class="hover:text-primary">LinkedIn</a>
+      <a href="https://github.com/ApoorvaPandey-12" class="hover:text-primary">GitHub</a>
+      <a href="mailto:2k23.csaiml2313101@gmail.com" class="hover:text-primary">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-400 bg-gray-950 animate-fadeIn">
+    &copy; 2025 Apoorva Pandey. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
